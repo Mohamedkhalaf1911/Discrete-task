@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,10 +10,15 @@ class Program
 static void Main(string[] args) // this function defines the entry point
 {
 bool Prime = true;
-Console.WriteLine("Prime Numbers between 1 to 100 : ");
-for (int a = 2; a <= 100; a++) //upper limit and lower limit are defined
+int number1,number2;
+Console.WriteLine("Enter first number");
+number1=int.Parse(Console.ReadLine());
+Console.WriteLine("Enter second number number");
+number2=int.Parse(Console.ReadLine());
+Console.WriteLine("Prime Numbers between {0} to {1} : ",number1,number2);
+for (int a = number1; a <= number2; a++) //upper limit and lower limit are defined
 {
-for (int b = 2; b <= 100; b++)// base logic for the primality
+for (int b = number1; b <= number2; b++)// base logic for the primality
 {
 if (a != b && a % b == 0) //modulo operators employed
 {
